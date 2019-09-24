@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net472;netcoreapp3.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MathLib\MathLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="('$(TargetFramework)' == 'net472')">
+    <Compile Remove="**/*.NetCore.cs" />
+    <None Include="**/*.NetCore.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="('$(TargetFramework)' == 'netcoreapp3.0')">
+    <Compile Remove="**/*.NetFx.cs" />
+    <None Include="**/*.NetFx.cs" />
+  </ItemGroup>
+
+</Project>

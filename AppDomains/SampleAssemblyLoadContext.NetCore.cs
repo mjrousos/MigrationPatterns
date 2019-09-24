@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.Loader;
 
-namespace NetCore
+namespace AppDomains
 {
     class SampleAssemblyLoadContext : AssemblyLoadContext
     {
