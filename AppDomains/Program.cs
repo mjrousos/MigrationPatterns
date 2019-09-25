@@ -7,7 +7,6 @@ namespace AppDomains
     {
         static void Main(string[] args)
         {
-            var evidence = new Evidence();
             Console.WriteLine($"Current AppDomain name: {AppDomain.CurrentDomain.FriendlyName}");
             Console.WriteLine($"Current AppDomain base directory: {AppDomain.CurrentDomain.BaseDirectory}");
             Console.WriteLine($"Current AppDomain target framework: {AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName}");
