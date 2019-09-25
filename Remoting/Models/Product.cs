@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Remoting.Models
+﻿namespace Remoting.Models
 {
     public class Product
     {

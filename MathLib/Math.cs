@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace MathLib
+﻿namespace MathLib
 {
     public static class Math
     {
